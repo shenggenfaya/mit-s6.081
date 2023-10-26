@@ -13,7 +13,7 @@ putc(int fd, char c)
 }
 
 static void
-printint(int fd, int xx, int base, int sgn)
+printint(int fd, int xx,int base, int sgn)
 {
   char buf[16];
   int i, neg;
@@ -111,3 +111,5 @@ printf(const char *fmt, ...)
   va_start(ap, fmt);
   vprintf(1, fmt, ap);
 }
+
+
